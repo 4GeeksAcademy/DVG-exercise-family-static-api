@@ -34,8 +34,6 @@ def handle_hello():
 @app.route('/member', methods=['POST'])
 def add_member():
     body = request.get_json()
-    print(body)
-    print(body["first_name"])
     member={
         "first_name": body["first_name"],
 		"age": body["age"],
